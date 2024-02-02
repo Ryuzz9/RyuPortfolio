@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="imagens/icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="imagens/icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <style>
+    .banner button {
+      padding: 15px 25px;
+      border: unset;
+      border-radius: 15px;
+      color: #000000;
+      z-index: 1;
+      background: #ffffff;
+      position: relative;
+      font-weight: 1000;
+      font-size: 17px;
+      -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+      box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+      transition: all 250ms;
+      overflow: hidden;
+    }
+
+    .banner button::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      border-radius: 15px;
+      background-color: #3b005d;
+      z-index: -1;
+      -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+      box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+      transition: all 250ms
+    }
+
+    .banner button:hover {
+      color: #e8e8e8;
+    }
+
+    .banner button:hover::before {
+      width: 100%;
+    }
+  </style>
+  <title>Portfólio</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="hamburguer" onclick="toggleSidebar"()>
+      <div class="line" id="line1"></div>
+      <div class="line" id="line2"></div>
+      <div class="line" id="line3"></div>
+      <span>fechar</span>
+    </div>
+    
+    
+
+    <header id="home">
+      <div class="img-wrapper">
+        <img src="imagens/fundo.gif" alt="">
+      </div>
+      <div class="banner">
+        <h1>Desenvolvedor Web FRONT-END & DESIGN</h1>
+        <p>João Marcello Aguilar Souza</p>
+        <a href="https://wa.me/qr/F5SHMITEX2HKL1"><button> Saiba mais
+          </button></a>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <nav>
+        <ul class="menu">
+          <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+          <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+          <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+          <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="social-media">
+        <a href="https://www.instagram.com/jotax.arts?igsh=aGpiZmV6cmJ6dDFp"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Ryuzz9"><i class="fab fa-github-alt"></i></a>
+        <a href="https://wa.me/qr/F5SHMITEX2HKL1"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </aside>
+
+    <section class="sessao-conhecimentos" id="conhecimentos">
+      <div class="sessao-header">
+        <h1>Conhecimentos</h1>
+      </div>
+      <div class="conhecimentos">
+        <div class="conhecimento">
+          <div class="conhecimento-header">
+            <i class="fab fa-html5"></i>
+            <h3>HTML</h3>
+          </div>
+          <div class="conhecimento-text">
+
+          </div>
+        </div>
+        <div class="conhecimento">
+          <div class="conhecimento-header">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS</h3>
+          </div>
+          <div class="conhecimento-text">
+
+          </div>
+        </div>
+        <div class="conhecimento">
+          <div class="conhecimento-header">
+            <i class="fas fa-pencil-alt"></i>
+            <h3>Design</h3>
+          </div>
+          <div class="conhecimento-text">
+
+          </div>
+        </div>
+        <div class="conhecimento">
+          <div class="conhecimento-header">
+            <i class="fab fa-js"></i>
+            <h3>Javascript</h3>
+          </div>
+          <div class="conhecimento-text">
+
+          </div>
+        </div>
+        <div class="conhecimento">
+          <div class="conhecimento-header">
+            <i class="fab fa-php"></i>
+            <h3>PHP</h3>
+          </div>
+          <div class="conhecimento-text">
+
+          </div>
+        </div>
+        <div class="conhecimento">
+          <div class="conhecimento-header">
+            <i class="fab fa-java"></i>
+            <h3>JAVA</h3>
+          </div>
+
+
+          <div class="conhecimento-text">
+
+          </div>
+        </div>
+        <div class="conhecimentos-img-wrapper">
+          <img src="imagens/conhecimentos.png" alt="imagem conhecimento">
+        </div>
+      </div>
+    </section>
+
+    <div class="sessao-projetos" id="projetos">
+      <div class="sessao-header">
+        <h1>Projetos</h1>
+      </div>
+      <div class="projetos">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="imagens/pr1.jpg" alt="imagem do projeto ToDo" />
+          </div>
+          <div class="card-info">
+            <h2>Stardew Events</h2>
+            <h3> HTML, CSS, PHP, MYSQL</h3>
+            <p>Sistema web que baseia-se em reunir jogadores do jogo stardew valley.</p>
+           <a href="https://stardew-events.vercel.app"> <button class="btn">Saiba Mais</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="imagens/pro2.png" alt="imagem do projeto Maratona" />
+          </div>
+          <div class="card-info">
+            <h2>Gastrozona E-commerce</h2>
+            <h3>HTML, CSS, Javascript, SCSS, API </h3>
+            <p>Projeto E-commerce (em desenvolvimento).Caso de erro tire a URL /assets </p>
+           <a href="https://project-gastrozonaatt.vercel.app/"> <button class="btn">Saiba Mais</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="imagens/proj3.jpg" alt="imagem do projeto Casa Bela" />
+          </div>
+          <div class="card-info">
+            <h2>Noticiario Web Game Awards</h2>
+            <h3>HTML, CSS</h3>
+            <p>Site de noticias sobre game Awards.</p>
+            <a href="https://noticiario-web.vercel.app"><button class="btn">Saiba Mais</button></a>
+          </div>
+        </div>
+      </div>
+
+      </section>
+
+      <section class="sessao-contato" id="contato">
+        <div class="contato-wrapper">
+          <div class="contato-left"></div>
+          <div class="contato-right">
+            <h1>Contato</h1>
+
+            <form class="enviar" action="https://formsubmit.co/joaoblog.aguilar.01@gmail.com" method="POST">
+
+              <label for="label">nome</label>
+              <input type="text" name="name" required>
+              <label for="label">email</label>
+              <input type="email" name="email" required>
+
+
+              <label for="label">mensagem</label>
+              <textarea name="message" for="mensagem" cols="30" rows="10" required></textarea>
+              <p></p>
+
+              <button type="submit">ENVIAR</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+
+      <footer>
+        <div class="footer-content">
+          <p>
+            Copyright &copy; 2024 Ryuzz9
+          </p>
+          <div class="social-list">
+            <ul>
+              <li><a href="https://github.com/Ryuzz9"><i class="fab fa-github-alt"></i></a></li>
+              <li><a href="https://www.instagram.com/jotax.arts?igsh=aGpiZmV6cmJ6dDFp"><i
+                    class="fab fa-instagram"></i></a></li>
+              <li><a href="https://wa.me/qr/F5SHMITEX2HKL1"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <a href="#home" id="link-topo">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
