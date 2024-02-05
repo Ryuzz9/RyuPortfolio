@@ -6,3 +6,21 @@ document.addEventListener('DOMContentLoaded', function () {
         container.classList.toggle('show-menu');
     });
 });
+
+
+
+function toggleMusic(){
+
+    var musicDiv = document.getElementById("music");
+
+    musicDiv.style.display = 'block';
+
+
+}
+
+function sair(){
+
+    var sairDiv = document.getElementById("music")
+
+    sairDiv.style.display = 'none';
+}
